@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DetailVC.swift
 //  FavPlace
 //
 //  Created by Abhijeet Chaudhary on 26/01/16.
@@ -8,20 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class DetailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        btnMore.layer.cornerRadius = 3.5
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-    @IBOutlet weak var btnMore: UIButton!
-
+    @IBAction func btnBackACTION(sender: UIButton) {
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
-
